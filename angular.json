@@ -24,7 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+              "src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +86,10 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+              "src/styles.scss"
+            ],
             "scripts": []
           }
         },
@@ -113,5 +119,9 @@
       }
     }
   },
-  "defaultProject": "angular-ngrx-example"
+  "defaultProject": "angular-ngrx-example",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics",
+    "analytics": "6f4ae6ed-3a3a-458a-b97d-8c38ff2d5787"
+  }
 }

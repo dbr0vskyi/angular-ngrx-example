@@ -1,11 +1,11 @@
 export const environment = {
-  production: true,
+  production: false,
 
   api: {
     url: "https://jsonplaceholder.typicode.com",
   },
 
   logger: {
-    level: 0,
+    level: 4,
   },
 };
